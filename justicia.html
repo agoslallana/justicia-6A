@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUSTICIA - POLÍTICA</title>
+    <style>
+        /* Contenedor general */
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            font-family: 'Century Gothic', sans-serif;
+            font-size: 18px; /* Cambia el tamaño según sea necesario */
+        }
+
+        /* Imagen de fondo */
+        .imagen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        /* Contenedor del contenido */
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            z-index: 2;
+            opacity: 0; /* Comienza oculto */
+            transition: opacity 1s ease; /* Transición de opacidad */
+        }
+
+.content.visible {
+    opacity: 1; /* Aparece al ser visible */
+}
+
+
+        /* Pestaña deslizante */
+        .slider {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 3;
+        }
+
+        /* Flecha */
+        .arrow {
+            width: 50px;
+            height: 50px;
+            background-image: url('flecha 1.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+
+        /* Estilos de títulos */
+        h1, h2, h3, h4 {
+            color: #11061a;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        h1 { font-size: 42px; }
+        h2 { font-size: 36px; }
+        h3 { font-size: 30px; }
+        h4 { font-size: 26px; }
+
+        /* Estilo de párrafos */
+        p {
+            margin: 20px;
+            font-size: 18px;
+            color: #333;
+            text-align: justify;
+        }
+
+        /* Lista ordenada */
+        ol {
+            margin-left: 40px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Lista no ordenada */
+        ul {
+            margin-left: 60px;
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="justicia.png" alt="Justicia" class="imagen">
+
+    <div class="content" id="content">
+        <div class="identar-texto">
+            <!-- Pregunta 1-->
+            <h1 style="font-family: 'Quicksand', sans-serif; font-size: 42px; font-weight: bold;">¿Qué es la justicia y cómo se define?</h1>
+            <p>La justicia es un principio fundamental que busca asegurar el trato equitativo y el respeto a los derechos de todas las personas en una sociedad. Se puede entender de la siguiente manera:</p>
+
+            <ol start="1">
+                <li><b>Equidad y Derechos:</b></li>
+            </ol>
+            <ul>
+                <li>La justicia es un principio fundamental que busca asegurar el trato equitativo y el respeto a los derechos de todas las personas en una sociedad.</li>
+            </ul>
+
+            <ol start="2">
+                <li><b>Dimensiones de la Justicia:</b></li>
+            </ol>
+            <ul>
+                <li><b>Justicia Legal:</b> Se refiere al cumplimiento de las leyes y al acceso a un juicio justo, garantizando principios como el debido proceso, la presunción de inocencia y el derecho a una defensa adecuada.</li>
+                <li><b>Justicia Social:</b> Enfocada en la distribución equitativa de recursos y oportunidades, busca eliminar desigualdades que afectan a grupos vulnerables, promoviendo así el bienestar común.</li>
+                <li><b>Justicia Restaurativa:</b> Este enfoque se centra en reparar el daño causado por un delito, involucrando a todas las partes afectadas (víctimas, agresores y comunidad) para encontrar soluciones que restauren la paz.</li>
+            </ul>
+
+            <ol start="3">
+                <li><b>Filosofía de la Justicia:</b></li>
+            </ol>
+            <ul>
+                <li>A lo largo de la historia, filósofos como Platón, Aristóteles y John Rawls han explorado el concepto de justicia desde diferentes perspectivas, abordando temas como la armonía social, la equidad en la distribución de bienes y la necesidad de proteger a los más desfavorecidos.</li>
+            </ul>
+
+            <ol start="4">
+                <li><b>Importancia en la Sociedad:</b></li>
+            </ol>
+            <ul>
+                <li>La justicia es esencial para mantener el orden social, fomentar la confianza en las instituciones y promover relaciones interpersonales basadas en el respeto mutuo. Sin justicia, se generan conflictos y desigualdades que pueden desestabilizar a una sociedad.</li>
+            </ul>
+
+            <ol start="5">
+                <li><b>Objetivo Final:</b></li>
+            </ol>
+            <ul>
+                <li>El objetivo último de la justicia es construir una sociedad más justa y equitativa donde todos los individuos tengan la oportunidad de vivir con dignidad y plenitud.</li>
+            </ul>
+
+            <!-- Pregunta 2 -->
+            <h2 style="font-family: 'Montserrat', sans-serif; font-size: 42px; font-weight: bold;">¿Cuáles son los principios fundamentales de la Justicia?</h2>
+            <p style="font-size: 18px;">Principios Fundamentales del Derecho a la Justicia estan amparados en la Constitución Nacional Argentina a tarves de declaraciones, derechos y garantias, a saber: </p>
+
+            <ol start="1">
+                <li><b>Igualdad ante la Ley:</b></li>
+            </ol>
+            <ul>
+                <li>Todas las personas son iguales ante la ley y tienen derecho a recibir el mismo trato, sin discriminación por motivos de raza, género, religión, condición social, entre otros.</li>
+            </ul>
+
+            <ol start="2">
+                <li><b>Debido Proceso:</b></li>
+            </ol>
+            <ul>
+                <li>Este principio garantiza que todas las personas tengan derecho a un juicio justo y equitativo. Incluye el derecho a ser escuchado, a presentar pruebas y a defenderse adecuadamente.</li>
+            </ul>
+
+            <ol start="3">
+                <li><b>Presunción de Inocencia:</b></li>
+            </ol>
+            <ul>
+                <li>Toda persona acusada de un delito se considera inocente hasta que se demuestre su culpabilidad mediante un juicio justo. Este principio protege a los individuos de condenas injustas.</li>
+            </ul>
+
+            <ol start="4">
+                <li><b>Acceso a la Justicia:</b></li>
+            </ol>
+            <ul>
+                <li>Todas las personas deben tener acceso efectivo a los mecanismos judiciales para hacer valer sus derechos y obtener reparaciones por violaciones. Esto incluye la disponibilidad de asistencia legal asequible.</li>
+            </ul>
+
+            <ol start="5">
+                <li><b>Transparencia:</b></li>
+            </ol>
+            <ul>
+                <li>Los procesos judiciales deben ser transparentes, permitiendo que el público y las partes interesadas puedan observar cómo se llevan a cabo las decisiones judiciales.</li>
+            </ul>
+
+            <ol start="6">
+                <li><b>Independencia Judicial:</b></li>
+            </ol>
+            <ul>
+                <li>Los jueces deben ser imparciales y libres de influencias externas, garantizando que las decisiones se tomen basadas en la ley y los hechos, sin presiones políticas o sociales.</li>
+            </ul>
+
+            <ol start="7">
+                <li><b>Proporcionalidad:</b></li>
+            </ol>
+            <ul>
+                <li>Las sanciones y medidas tomadas por el sistema judicial deben ser proporcionales al delito cometido, asegurando que no haya castigos excesivos o desmedidos.</li>
+            </ul>
+
+            <ol start="8">
+                <li><b>Derecho a la Defensa:</b></li>
+            </ol>
+            <ul>
+                <li>Todas las personas tienen derecho a contar con una defensa adecuada en cualquier procedimiento judicial, ya sea mediante un abogado privado o uno asignado por el Estado.</li>
+            </ul>
+            
+
+                    <!-- Pregunta 3 -->
+        <h3 style="font-family: 'Montserrat', sans-serif; font-size: 42px; font-weight: bold;">¿Por qué es importante el acceso a la Justicia para todos?</h3>
+        <p style="font-size: 18px;">Estos principios son esenciales para asegurar que el derecho a la justicia sea respetado y promovido en cualquier sociedad</p>
+        <p>Importancia del Acceso a la Justicia para Todos</p>
+
+        <ol start="1">
+            <li><b>Protección de Derechos:</b></li>
+        </ol>
+        <ul>
+            <li>El acceso a la justicia garantiza que las personas puedan defender sus derechos y buscar reparaciones cuando estos son violados. Sin este acceso, los derechos fundamentales pueden ser vulnerados sin consecuencia.</li>
+        </ul>
+
+        <ol start="2">
+            <li><b>Igualdad y No Discriminación:</b></li>
+        </ol>
+        <ul>
+            <li>Asegurar que todos tengan acceso a la justicia promueve la igualdad ante la ley. Esto es especialmente crucial para grupos vulnerables que, de otro modo, podrían ser marginados o discriminados.</li>
+        </ul>
+
+        <ol start="3">
+            <li><b>Fortalecimiento del Estado de Derecho:</b></li>
+        </ol>
+        <ul>
+            <li>Un sistema judicial accesible y efectivo refuerza el estado de derecho, donde las leyes se aplican de manera justa y equitativa, creando un entorno de confianza en las instituciones.</li>
+        </ul>
+
+        <ol start="4">
+            <li><b>Prevención de Conflictos:</b></li>
+        </ol>
+        <ul>
+            <li>Facilitar el acceso a mecanismos judiciales puede ayudar a resolver disputas antes de que se conviertan en conflictos mayores, promoviendo así la paz social y la cohesión comunitaria.</li>
+        </ul>
+
+        <ol start="5">
+            <li><b>Fomento de la Participación Ciudadana:</b></li>
+        </ol>
+        <ul>
+            <li>El acceso a la justicia es esencial para fomentar la participación ciudadana, ya que empodera a las personas al proporcionarles información sobre sus derechos, facilita la inclusión de diversas voces en el proceso democrático y estimula la acción colectiva. Esto no solo promueve una mayor responsabilidad cívica y un sentido de pertenencia, sino que también mejora las políticas públicas al permitir que las preocupaciones ciudadanas sean escuchadas. Además, al fortalecer la transparencia y el diálogo social, se reduce el descontento y se crea un entorno más estable y participativo.</li>
+        </ul>
+
+        <ol start="6">
+            <li><b>Promoción del Bienestar Social:</b></li>
+        </ol>
+        <ul>
+            <li>Un acceso equitativo a la justicia contribuye al bienestar general al asegurar que todos los ciudadanos puedan vivir sin temor a abusos o injusticias.</li>
+        </ul>
+
+        <ol start="7">
+            <li><b>Responsabilidad del Estado:</b></li>
+        </ol>
+        <ul>
+            <li>El acceso a la justicia es una obligación del Estado, que debe garantizar mecanismos efectivos para que todos los ciudadanos puedan hacer valer sus derechos sin obstáculos económicos o sociales.</li>
+        </ul>
+            <!-- Pregunta 4-->
+            <h4 style="font-family: 'Montserrat', sans-serif; font-size: 42px; font-weight: bold;">¿Cómo es la Justicia en Argentina?</h4>
+            <p style="font-size: 18px;">Division de Poderes: </p>
+
+            <ol start="1">
+                <li><b>Poder Legislativo:</b></li>
+            </ol>
+            <ul>
+                <li><b>Poder Legislativo:</b></li>
+                <ul>
+                    <li>Es el Congreso compuesto por la Cámara de Diputados y Senadores.</li>
+                    <li><b>Cámara de Senadores:</b> Compuesta por 72 senadores, tres por cada provincia y tres por la Ciudad Autónoma de Buenos Aires. Duran seis años en su mandato y son reelegibles indefinidamente. Tienen la responsabilidad de aprobar tratados internacionales y designar a los jueces de la Corte Suprema.</li>
+                    <li>Requisitos: Debe tener al menos 30 años de edad y ser ciudadano argentino con al menos seis años de residencia en la provincia que representa.</li>
+                    <li><b>Cámara de Diputados:</b> Compuesta por 257 Diputados Nacionales que representan al pueblo. Tienen mandatos de cuatro años y pueden ser reelegidos. Son responsables de iniciar proyectos de ley relacionados con impuestos y gastos públicos.</li>
+                    <li><b>Requisitos: </b> Debe tener al menos 25 años de edad y ser ciudadano argentino con al menos dos años de residencia en la provincia que representa.</li>
+                    <li><b>Proceso Legislativo:</b> Incluye la presentación de proyectos, su discusión en comisiones, votación en ambas cámaras y sanción final por el Presidente. Los ciudadanos también pueden presentar iniciativas populares.</li>
+                    <li><b>Atribuciones:</b> Incluyen la sanción de leyes, juicio político, dictar reglamentos internos, aprobar tratados, y legislar en materia aduanera.</li>
+                    <li><b>Privilegios Individuales:</b> Gozan de inmunidad de opinión e inmunidad de arresto, entre otros.</li>
+                </ul>
+            </ul>
+            
+            <ul>
+                <li><b>Poder Ejecutivo:</b></li>
+                <ul>
+                    <li><b>UNIPERSONAL:</b> Está integrado por una sola persona, el Presidente. (El Vicepresidente forma parte del Congreso y es el Presidente del Senado, quien lo reemplaza en caso de ausencia).</li>
+                    <li><b>Elección:</b> Elegidos directamente por el pueblo en doble vuelta o balotaje.</li>
+                    <li><b>Requisitos:</b></li>
+                    <li>30 años.</li>
+                    <li>6 años de ciudadanía en ejercicio argentino nativo o hijo de argentino nativo.</li>
+                    <li><b>Duración:</b> 4 años, reelegible por un periodo.</li>
+                    <li><b>Funciones:</b> Ejercer el poder de veto sobre leyes, nombrar miembros del gabinete, declarar estado de emergencia, y representar al país internacionalmente. Debe rendir cuentas al Congreso presentando informes anuales sobre la situación del país.</li>
+                    <li><b>Vicepresidencia:</b> Preside el Senado y puede ser designado para liderar comisiones o iniciativas. También asume funciones específicas en la administración pública.</li>
+                    <li><b>Gabinete:</b> Compuesto por ministros que asesoran al Presidente y son responsables de implementar políticas públicas. Las secretarías tienen funciones específicas dentro de sus áreas asignadas.</li>
+                </ul>
+            </ul>
+            <br>
+            <ol start="3">
+                <li><b>Poder Judicial:</b></li>
+            </ol>
+            <ul>
+                <li><b>Principio de Independencia:</b> El Poder Judicial opera bajo el principio de independencia, lo que significa que el Poder Ejecutivo y el Poder Legislativo no pueden interferir en las decisiones del Poder Judicial. Este principio es fundamental para garantizar la imparcialidad y la justicia en la aplicación de la ley.</li>
+            </ul>
+            <br>
+            <ol start="2">
+                <li><b>Corte Suprema de Justicia de la Nación:</b></li>
+            </ol>
+            <ul>
+                <li><b>Composición:</b> Actualmente, la Corte Suprema está compuesta por cinco miembros, aunque hay un cargo vacante, lo que significa que actualmente cuenta con cuatro miembros.</li>
+                <li><b>Requisitos:</b></li>
+                <ul>
+                    <li>Ser abogado.</li>
+                    <li>Tener al menos ocho años de ejercicio profesional.</li>
+                    <li>Cumplir con las calidades requeridas para ser senador.</li>
+                </ul>
+                <li><b>Elección:</b> Los miembros son designados por el Poder Ejecutivo (PE) con acuerdo del Senado, requiriendo dos tercios de los votos de los miembros presentes en sesión pública.</li>
+                <li><b>Remoción:</b> La remoción de los miembros de la Corte se realiza mediante juicio político.</li>
+            </ul>
+            <br>
+            <ol start="3">
+                <li><b>Tribunales Inferiores:</b></li>
+            </ol>
+            <ul>
+                <li><b>Elección:</b> Los jueces de tribunales inferiores son designados por el Poder Ejecutivo, basado en una propuesta vinculante en terna del Consejo de la Magistratura, con acuerdo del Senado en sesión pública.</li>
+            </ul>
+            <br>
+            <ol start="4">
+                <li><b>Consejo de la Magistratura:</b></li>
+            </ol>
+            <ul>
+                <li><b>Creación y Finalidad:</b> Este órgano fue incorporado con la reforma de 1994 como parte del Poder Judicial, con la finalidad de lograr la independencia del Poder Judicial respecto al Poder Ejecutivo y al Poder Legislativo. Su función principal es la selección de magistrados y la administración del Poder Judicial.</li>
+                <li><b>Composición:</b> El Consejo está compuesto por 20 miembros, cuya integración es periódica. Incluye:</li>
+                <ul>
+                    <li>El Presidente de la Corte Suprema de Justicia.</li>
+                    <li>Cuatro jueces del Poder Judicial de la Nación.</li>
+                    <li>Ocho legisladores nacionales (cuatro senadores y cuatro diputados).</li>
+                    <li>Cuatro representantes de abogados de la matrícula federal.</li>
+                    <li>Un representante del Poder Ejecutivo Nacional.</li>
+                    <li>Dos representantes del ámbito científico y académico.</li>
+                </ul>
+            </ul>
+            <br>
+            <ol start="5">
+                <li><b>Ministerio Público:</b></li>
+            </ol>
+            <ul>
+                <li><b>Naturaleza:</b> Es un órgano extra poder, lo que significa que no pertenece a ningún poder del Estado (Ejecutivo, Legislativo o Judicial). Tiene autarquía financiera, es independiente y tiene autonomía funcional.</li>
+                <li><b>Regulación:</b> Su funcionamiento está regulado por el Artículo 120 de la Constitución, que establece que su función es promover la actuación de la justicia en defensa de la legalidad y los intereses generales de la sociedad, en coordinación con las demás autoridades de la República.</li>
+                <li><b>Funcionarios:</b></li>
+                <ul>
+                    <li><b>Procurador General:</b> Es el jefe de los fiscales a nivel nacional, encargado de la acusación en los procesos penales.</li>
+                    <li><b>Defensor General:</b> Es el jefe del Ministerio Público de Defensa, encargado de defender los derechos de los acusados en el ámbito penal.</li>
+                </ul>
+                <li><b>Privilegios:</b> Los funcionarios del Ministerio Público gozan de los mismos privilegios que los jueces:</li>
+                <ul>
+                    <li>Inamovilidad en el cargo.</li>
+                    <li>Intangibilidad de remuneraciones.</li>
+                </ul>
+                <li><b>Remoción:</b> Aunque la Constitución no especifica el proceso de remoción, la doctrina sostiene que debe realizarse mediante juicio político, considerando los privilegios y la investidura de los funcionarios.</li>
+            </ul>
+            
+            <h5 style="font-family: 'Montserrat', sans-serif; font-size: 42px; font-weight: bold;">¿Que representa mi maqueta?</h5>
+            <p style="font-family: 'Century Gothic', sans-serif; font-size: 18px;">En esta maqueta, he creado una representación visual de la Justicia, simbolizada por una figura central que sostiene una balanza y una espada. La balanza representa la equidad y la imparcialidad en la aplicación de la ley, mientras que la espada simboliza la autoridad y el poder necesarios para hacer cumplir la justicia. Alrededor de esta figura, diversos carteles resaltan los derechos fundamentales que la justicia debe respaldar. Estos carteles representan la voz activa de la sociedad en su demanda por un sistema más equitativo, y cada uno destaca un derecho esencial que busca amparo en la justicia. Esta representación simboliza que la justicia no solo es un ideal, sino una necesidad tangible y vivida por todos, que responde a la protección y el respeto de los derechos en el espacio público y en la vida cotidiana.</p>
+            
+            
+        </div>
+    </div>
+
+
+    <div class="slider" id="slider">
+        <div class="arrow" id="arrow"></div>
+    </div>
+
+    <script>
+        const arrow = document.getElementById('arrow');
+        const content = document.getElementById('content');
+
+        // Muestra el contenido y oculta la flecha
+        arrow.addEventListener('click', function() {
+            content.style.opacity = 1; // Muestra el contenido
+            arrow.style.display = 'none'; // Oculta la flecha
+            document.getElementById('slider').style.display = 'none'; // Oculta la pestaña deslizante
+        });
+    </script>
+</body>
+</html>
